@@ -11,8 +11,7 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        app = docker.build("kserge2001/iamges" + ":$BUILD_NUMBER":wq
-                          )
+        app = docker.build("kserge2001/iamges" + ":$BUILD_NUMBER")
     }
 
     stage('Test image') {
